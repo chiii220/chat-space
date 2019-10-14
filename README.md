@@ -1,6 +1,6 @@
 # README
 
-## groups_usersテーブル
+## group_usersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
