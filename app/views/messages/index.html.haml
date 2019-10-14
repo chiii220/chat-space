@@ -1,0 +1,75 @@
+.flash-box
+.wrapper
+  .chat-side
+    .side-header
+      .side-header__box
+        .side-header__box__user-name
+          iii
+        .side-header__box__menu
+          .side-header__box__menu__new-group
+            -# %li.side-header__box__menu__new-group
+            %a{:href => "#"}
+          .side-header__box__menu__edit-user
+            %i.fa.fa-edit
+            -# %li.side-header__box__menu__edit-user
+            %a{:href => "#"}
+            %i.fa.fa-cog
+    .groups
+      .group
+        .group__name
+          test
+        .group__message
+          hello!
+      .group
+        .group__name
+          sample-group
+        .group__message
+          hello!
+      .group
+        .group__name
+          example
+        .group__message
+          まだメッセージはありません
+  .chat
+    .header
+      .left-header
+        .left-header__title
+          chat
+        %ul.left-header__members
+          Member :
+          %li.main-header__left-box__member-list
+            aiueo
+          %li.main-header__left-box__member-list
+            kkkkkk
+      .group-edit
+        Edit
+    .messages
+      .message__upper-info
+        .message__upper-info__talker
+          test-user
+        .message__upper-info__date
+          2019/09/20(Fri) 16:09:15
+      .message__text__content
+        メッセージ
+      .message__upper-info
+        .message__upper-info__talker
+          test-user
+        .message__upper-info__date
+          2019/09/20(Fri) 16:09:15
+      .message__text__content
+        メッセージ
+      .message__upper-info
+        .message__upper-info__talker
+          test-user
+        .message__upper-info__date
+          2019/09/20(Fri) 16:09:15
+      .message__text__content
+        メッセージ
+    .form
+      %form
+        %input.form__message{:name => "message[content]", :placeholder => "type a message", :type => "text"}/
+        .form__new
+          %label.form__new__image
+            = fa_icon 'picture-o', class: 'icon'
+            %input.hidden{type: 'file'}
+        %input.form__submit{type: 'submit', value: 'Send'}
