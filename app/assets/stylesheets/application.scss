@@ -1,8 +1,14 @@
+@import "modules/reset";
 @import "font-awesome";
 @import "config/colors";
-@import "modules/reset";
 @import "user";
 @import "modules/flash";
 @import "modules/side_bar";
 @import "modules/index";
 @import "modules/group";
+
+// .clearfix::after{
+//   content: '';
+//   display: flex;
+//   clear: both;
+// }
